@@ -1,0 +1,175 @@
+/* 75 rem */
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .why_container {
+    padding: 4.8rem 0;
+  }
+
+  .membership {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membership_catagory {
+    margin: 7rem 4.8rem;
+  }
+
+  .membership_description {
+    margin: 7rem 5.6rem;
+  }
+}
+
+/* 960px / 16px = 60rem */
+
+@media (max-width: 60rem) {
+  .hero p {
+    padding: 0 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .why_image {
+    display: none;
+  }
+  .why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 3.6rem 2.4rem;
+    background-color: #000;
+  }
+
+  .trainer_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .review_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* MOBILE NAVIGATION */
+
+  nav {
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    /* Working */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all .5s ease-in;
+    transform: translateX(100%);
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-right: 0;
+    font-size: 2.4rem;
+  }
+  .menu_btn {
+    display: inline-block;
+    z-index: 2;
+  }
+
+  .nav_open nav {
+    opacity: 1;
+    pointer-events:all;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav_open .ri-close-line{
+    display: block;
+  }
+
+  .nav_open .ri-menu-line{
+    display: none;
+  }
+}
+/* 704px /16 = 44 */
+@media (max-width: 44rem){
+    html{
+        font-size: 50%;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul{
+        margin: 0;
+    }
+
+    .menu_btn{
+        font-size: 3.6rem;
+    }
+
+    .logo{
+        font-size: 3.6rem;
+    }
+
+    .hero h1{
+        font-size: 5rem;
+        padding: 1.2rem;
+        line-height: 1.1;
+    }
+
+    .btn_box{
+        padding: 0 1.2rem;
+    }
+
+    .btn{
+        font-size: 1.4rem;
+    }
+
+    .btn_secondary{
+        padding: 1.2rem 2.4rem;
+    }
+
+    .why{
+        padding: 2rem;
+    }
+/* WHY */
+
+    .why_para{
+        padding: 0 1.2rem;
+    }
+
+    /* trainer */
+    .trainer_grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Membership */
+
+    .membership_catagory{
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonails  */
+
+    .testimonial-heading{
+        text-align: center;
+    }
+
+    .review_box{
+        grid-template-columns: 1fr;
+    }
+}
